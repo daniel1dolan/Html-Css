@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #square{
+            width: 0;
+            height: 0;
+            border-left: 50px solid red;
+            border-right: 50px solid red;
+            border-top: 50px solid red;
+            border-bottom: 50px solid red;
+        }
+        #rectangle{
+            width: 0;
+            height: 0;
+            border-left: 100px solid red;
+            border-right: 100px solid red;
+            border-top: 50px solid red;
+            border-bottom: 50px solid red;
+        }
+        #oval{
+            background-color: red;
+            border: 1px black solid;
+            border-radius: 50%;
+            height: 70px;
+            width: 50px;
+        }
+        #circle{
+            background-color: red;
+            border: 1px black solid;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+        }
+        #triangle-down{
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 100px solid red;
+        }
+        #triangle-left{
+            width: 0;
+            height: 0;
+            border-right: 100px solid red;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+        }
+        #right-triangle{
+            width: 0;
+            height: 0;
+            border-left: 100px solid red;
+            border-bottom: 100px solid red;
+            border-right: 50px solid transparent;
+            border-top: 200px solid transparent;
+        }
+        #trapezoid{
+            width: 100px;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-bottom: 150px solid red;
+            border-right: 25px solid transparent;
+        }
+        #six-star{
+            width: 100px;
+            border-left: 25px solid transparent;
+            border-bottom: 150px solid transparent;
+            border-right: 25px solid transparent;
+            border-top: 100px solid transparent;
+            background-color: transparent;;
+        }
+        #six-star {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid red;
+            position: relative;
+    }
+        #six-star:after {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 100px solid red;
+            position: absolute;
+            content: "";
+            top: 30px;
+            left: -50px;
+    }
+        #diamond {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-bottom-color: red;
+            position: relative;
+            top: -50px;
+    }
+    #diamond:after {
+            content: '';
+            position: absolute;
+            left: -50px;
+            top: 50px;
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-top-color: red;
+    }
+    #pacman {
+            width: 0px;
+            height: 0px;
+            border-right: 60px solid transparent;
+            border-top: 60px solid red;
+            border-left: 60px solid red;
+            border-bottom: 60px solid red;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+    }
+    </style>
+</head>
+<body>
+    <p id="square"></p>
+    <p id="rectangle"></p>
+    <p id="oval"></p>
+    <p id="circle"></p>
+    <p id="triangle-down"></p>
+    <p id="triangle-left"></p>
+    <p id="right-triangle"></p>
+    <p id="trapezoid"></p>
+    <p id="six-star"></p>
+    <p id="diamond"></p>
+    <p id="pacman"></p>
+</body>
+</html>
